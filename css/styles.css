@@ -3,6 +3,7 @@
   --primary-One: hsl(0, 36%, 70%);
   --primary-Two: hsl(0, 93%, 68%);
   --neutral-One: hsl(0, 6%, 24%);
+  --fondo-One: hsl(0, 10%, 90%);
 }
 
 * {
@@ -13,39 +14,37 @@
 
 body {
   font-size: 16px;
-
-  padding: 20px;
+  padding: 10%;
+ /*  background-color: var(--fondo-One); */
 }
 
-.general {
+.general{
+  border: 5px red solid;
+  padding: 80px 30px;
+}
+.logo{
+  padding-bottom: 2rem;
+}
+
+.generalUno{
   display: flex;
   flex-wrap: wrap-reverse;
-  /*   background: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)),linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)); */
-
-  border: 1px black solid;
-  margin-top: 10%;
 }
 
-.generalUno {
-  border: 1px red solid;
-  background: url(/images/bg-pattern-desktop.svg);
-  object-fit: cover;
-  width: 50%;
-  height: 50vh;
+.general__contenidos{
+  background-image: 
+  linear-gradient(to linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%))),
+  url(/images/bg-pattern-desktop.svg) ;
+  width: 60%;
+  height: 500px;
+  padding-right: 0;
 }
-
-figure {
-  width: 50%;
-  height: 50vh;
-}
-
-.imagen img {
-  border: 1px rgb(30, 30, 211) solid;
+.imagen{
+  background: blue;
+  width: 40%;
+  height: 500px;
   
-  height: 50vh;
-  object-fit: cover;
 }
-
 .attribution {
   font-size: 11px;
   text-align: center;
